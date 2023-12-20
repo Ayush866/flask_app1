@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User REGISTRATION FORM</title>
+    <style>
+        body {
+
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #000;
+        }
+
+        .container h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container form {
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            display: block;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>USER REGISTRATION</h1>
+        <form action="http://127.0.0.1:8000/register/" method="post">
+            <!-- <div class="mb-3">
+            <label class="form-label">Employee ID</label>
+            <input class="form-control" type="number" name="employee_id"
+                placeholder="ENTER YOUR Employee ID"  />
+            </div> -->
+
+            <div class="mb-3">
+                <label class="form-label">EMPLOYEE NAME</label>
+                <input class="form-control"  name="employee_name"
+                    placeholder="ENTER YOUR NAME"  />
+                </div>
+
+            <div class="mb-3">
+                <label class="form-label">EMPLOYEE USER NAME</label>
+                <input class="form-control"  name="user_name"
+                    placeholder="ENTER YOUR USERNAME"  />
+                </div>   
+            
+            <div class="mb-3">
+                <label class="form-label"> EMPLOYEE EMAIL</label>
+                <input class="form-control" type="email" name="employee_email"
+                    placeholder="ENTER YOUR EMAIL"  />
+            </div> 
+
+            <div class="mb-3">
+                <label class="form-label"> EMPLOYEE PASSWORD</label>
+                <input class="form-control" type="password" name="employee_password"
+                    placeholder="ENTER YOUR PASSWORD" required />
+            </div>
+
+
+
+
+            
+
+           
+
+
+            
+
+            <!-- Other form inputs here -->
+
+            <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="submit" required />
+            </div>
+        </form>
+        <div class="result">
+            <h2>{{results}}</h2>
+        </div>
+        <div>
+            <a href="http://127.0.0.1:8000/"><button>Return to Main Menu</button></a>
+        </div>
+
+    </div>
+</body>
+
+</html>
