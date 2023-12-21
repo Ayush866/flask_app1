@@ -70,12 +70,13 @@
 <body>
     <div class="container">
         <h1>USER LOGIN</h1>
-        <form action="http://127.0.0.1:8000/login/" method="post">
+        <form action="http://127.0.0.1:8000/login2/" method="post">
             <!-- <div class="mb-3">
             <label class="form-label">Employee ID</label>
             <input class="form-control" type="number" name="employee_id"
                 placeholder="ENTER YOUR Employee ID"  />
             </div> -->
+            {%csrf_token%}
 
 
             <div class="mb-3">
